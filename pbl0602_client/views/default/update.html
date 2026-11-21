@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+<h2>Edit Data Mobil (via Web Service)</h2>
+<form method="post">
+    <div class="form-group"><label>Car Name</label><input type="text" name="carname" value="{{=car.get('carname', '')}}" class="form-control" required></div>
+    <div class="form-group"><label>Car Brand</label><input type="text" name="carbrand" value="{{=car.get('carbrand', '')}}" class="form-control" required></div>
+    <div class="form-group"><label>Car Model</label><input type="text" name="carmodel" value="{{=car.get('carmodel', '')}}" class="form-control" required></div>
+    <div class="form-group"><label>Car Price</label><input type="text" name="carprice" value="{{=car.get('carprice', '')}}" class="form-control" required></div>
+    <br>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="{{=URL('index')}}">Batal</a>
+</form>
